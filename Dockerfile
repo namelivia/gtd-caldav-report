@@ -11,3 +11,4 @@ EXPOSE 4444
 
 FROM builder AS production
 RUN pipenv install
+ENTRYPOINT ["sh", "/app/entrypoint.sh"]

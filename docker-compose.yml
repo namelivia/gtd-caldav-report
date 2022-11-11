@@ -7,15 +7,8 @@ services:
       dockerfile: Dockerfile
       target: development
     container_name: tasks
-    stdin_open: true
     working_dir: /app
     ports:
       - "4444:4444"
     volumes:
       - ./:/app
-    command: [
-        "pipenv",
-        "run",
-        "python",
-        "test.py",
-    ]
