@@ -12,10 +12,17 @@ def _build_report_sections(todos, ranges, actions):
     for list_name, list_items in todos.items():
         for range_name, range_timestamp in ranges.items():
             for action_name, get_action in actions.items():
-                item_names = [todo.name for todo in list_items if get_action(todo) is not None and get_action(todo) > range_timestamp]
+                item_names = [
+                    todo.name
+                    for todo in list_items
+                    if get_action(todo) is not None
+                    and get_action(todo) > range_timestamp
+                ]
                 if len(item_names) > 0:
                     sections.append(
-                        ReportSection(f"{list_name} taks {action_name} {range_name}:", item_names)
+                        ReportSection(
+                            f"{list_name} taks {action_name} {range_name}:", item_names
+                        )
                     )
     return sections
 

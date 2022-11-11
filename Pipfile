@@ -5,9 +5,14 @@ verify_ssl = true
 
 [dev-packages]
 pudb = "*"
+black = "*"
+pre-commit = "*"
 
 [packages]
 caldav = "*"
 
+[pipenv]
+allow_prereleases = true
+
 [requires]
-python_version = "3.6"
+python_version = "3.8"

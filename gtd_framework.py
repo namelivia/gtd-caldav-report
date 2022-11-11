@@ -23,7 +23,7 @@ def _get_slug(calendar):
 
 
 def _filter_gtd_calendars(calendars):
-    gtd = ['next-actions', 'waiting-for', 'projects', 'some-daymaybe', 'in']
+    gtd = ["next-actions", "waiting-for", "projects", "some-daymaybe", "in"]
     return filter(lambda x: _get_slug(x) in gtd, calendars)
 
 
@@ -31,5 +31,8 @@ def get_todos(calendars):
     todos = {}
 
     for calendar in _filter_gtd_calendars(calendars):
-        todos[_get_slug(calendar)] = [TODO(todo.vobject_instance) for todo in calendar.todos(include_completed=True)]
+        todos[_get_slug(calendar)] = [
+            TODO(todo.vobject_instance)
+            for todo in calendar.todos(include_completed=True)
+        ]
     return todos
