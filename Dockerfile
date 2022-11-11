@@ -1,6 +1,8 @@
 FROM python:3.8-alpine AS builder
 WORKDIR /app
 COPY . /app
+RUN apk update
+RUN apk add gcc python3-dev musl-dev make
 RUN pip install -I pipenv==2018.11.26
 
 FROM builder AS development
