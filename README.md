@@ -1,6 +1,7 @@
 # gtd-caldav-report
 
 [About the GTD Framework in Nextcloud](https://namelivia.com/gtd-and-nextcloud/)
+
 Get a report of weekly tasks from a CalDav (Nextcloud) server.
 
 ## Instructions
