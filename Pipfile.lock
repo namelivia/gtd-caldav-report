@@ -35,7 +35,7 @@
                 "sha256:f04e857b59d9d1ccc39ce2da1021d196e47234873820cbeaad210724b1ee28ac",
                 "sha256:fadbfe37f74051d024037f223b8e001611eac868b5c5b06144ef4d8b799862f2"
             ],
-            "markers": "python_version == '3.7' or python_version == '3.8'",
+            "markers": "python_version < '3.9'",
             "version": "==0.2.1"
         },
         "caldav": {
