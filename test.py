@@ -1,4 +1,4 @@
-from printer import print_section
+from sender import send_section
 from report_builder import build_report
 from caldav_client import get_calendars
 from gtd_framework import get_todos
@@ -13,4 +13,4 @@ todos = get_todos(calendars)
 report = build_report(todos)
 
 # Print the report in the screen
-[print_section(section) for section in report]
+[send_section(section) for section in report]
