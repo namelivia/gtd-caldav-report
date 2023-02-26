@@ -40,11 +40,11 @@
         },
         "caldav": {
             "hashes": [
-                "sha256:332674f67c1a9b1f1010941a218d58d89dc3dc2361ba8162f05e21d51b60562a",
-                "sha256:82fe35d7e195ec5be4f1dbf1dfb015b3c080a780a3a50d378d342ea56a4fc2ce"
+                "sha256:5c96c978f2355bd1959e08ed23cbdcf84629a246cddf61599a2a4b256514e0cf",
+                "sha256:b9d23f67b3b045863eaab8466e73bb3d4c91de42460f4262dfc3a5cab44ae85d"
             ],
             "index": "pypi",
-            "version": "==1.1.1"
+            "version": "==1.1.3"
         },
         "certifi": {
             "hashes": [
@@ -272,10 +272,10 @@
         },
         "recurring-ical-events": {
             "hashes": [
-                "sha256:5c1be739f0ebf417cd8cb21d618913dffc9ab2d927beb6747f1fdd4d748a284b",
-                "sha256:836318bfc030d45555241397474d983b4d664139ce009aed1213bd3ca59ee9a5"
+                "sha256:a618140129e2ff00afa6b7afc1a154c2cb2177166621a519941b7058d6f6c339",
+                "sha256:c4bc7d0d26fcda0ac3b773c9706fd1e271b7b0e0230ad0ee02ccab55e274ea11"
             ],
-            "version": "==2.0.1"
+            "version": "==2.0.2"
         },
         "requests": {
             "hashes": [
@@ -529,11 +529,11 @@
         },
         "setuptools": {
             "hashes": [
-                "sha256:95f00380ef2ffa41d9bba85d95b27689d923c93dfbafed4aecd7cf988a25e012",
-                "sha256:bb6d8e508de562768f2027902929f8523932fcd1fb784e6d573d2cafac995a48"
+                "sha256:e5fd0a713141a4a105412233c63dc4e17ba0090c8e8334594ac790ec97792330",
+                "sha256:f106dee1b506dee5102cc3f3e9e68137bbad6d47b616be7991714b0c62204251"
             ],
             "markers": "python_version >= '3.7'",
-            "version": "==67.3.2"
+            "version": "==67.4.0"
         },
         "tomli": {
             "hashes": [
