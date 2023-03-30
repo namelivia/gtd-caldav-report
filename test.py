@@ -13,4 +13,7 @@ todos = get_todos(calendars)
 report = build_report(todos)
 
 # Print the report in the screen
-[send_section(section) for section in report]
+if len(report) > 0:
+    [send_section(section) for section in report]
+else:
+    send_section("No tasks to report")
