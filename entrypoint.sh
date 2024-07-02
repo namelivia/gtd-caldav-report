@@ -1,2 +1,2 @@
 #!/bin/bash
-pipenv run python test.py
+pipenv run python main.py
