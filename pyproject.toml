@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "app"
-version = "1.2.0"
+version = "1.2.1"
 description = "Send retroachievements data to Apprise"
 authors = ["José Ignacio Amelivia Santiago <hello@namelivia.com>"]
 readme = "README.md"
