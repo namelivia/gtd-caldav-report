@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "app"
+version = "1.0.0"
+description = "Send retroachievements data to Apprise"
+authors = ["José Ignacio Amelivia Santiago <hello@namelivia.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+requests = "*"
+wget = "*"
+python-dotenv = "*"
+
+[tool.poetry.dev-dependencies]
+pytest = "*"
+mock = "*"
+pytest-cov = "*"
+pudb = "*"
+codecov = "*"
+black = "*"
+pre-commit = "*"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

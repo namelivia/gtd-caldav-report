@@ -17,7 +17,26 @@ jobs:
         name: Set up development Docker Buildx
         id: development_builder
         uses: docker/setup-buildx-action@v1
-
+  test:
+    runs-on: ubuntu-latest
+    needs: setup
+    steps:
+      -
+        name: Build testing container
+        uses: docker/build-push-action@v2
+        with:
+          push: false
+          builder: ${{ steps.development_builder.outputs.name }}
+          target: development
+          load: true
+          tags: retroachievements-apprise-testing:latest
+      - 
+        name: Run tests
+        uses: addnab/docker-run-action@v1
+        with:
+          image: retroachievements-apprise-testing:latest
+          shell: sh 
+          run: sh /app/run_tests_ci ${{ github.sha }} ${{ secrets.CODECOV_TOKEN }}
   deploy:
     runs-on: ubuntu-latest
     needs: setup
@@ -50,4 +69,4 @@ jobs:
           push: true
           builder: ${{ steps.production_builder.outputs.name }}
           target: production
-          tags: namelivia/gtd-caldav-report:${{ env.TAG }}
+          tags: namelivia/retroachievements-apprise:${{ env.TAG }}
